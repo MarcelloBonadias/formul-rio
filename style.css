@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.main-Cadastre-se {
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(-45deg, #00eeff, #011e5c);
+        background-size: 220% 220%;
+        animation: main-Cadastre-se 10s ease infinite;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+@keyframes main-Cadastre-se {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+.right-Cadastre-se {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-Cadastre-se {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 30px 35px;
+        background: linear-gradient(-45deg, #00eeff, #011e5c);
+        background-size: 220% 220%;
+        animation: main-Cadastre-se 5s ease infinite;
+        border-radius: 20px;
+        box-shadow: 0px 10px 40px #00000056;
+        flex-direction: center;
+}
+
+.card-Cadastre-se >h1 {
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield>input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #FFF;
+    color: #000000;
+    font-size: 13pt;
+    box-shadow: 0px 10px 40px #ffffff56;
+    outline: none;
+    box-sizing: border-box;
+}
+.textfield>label {
+    color: #ffffff;
+    margin-bottom: -5px;
+
+}
+
+.Cadastrar {
+    font-size: 14px;
+    text-decoration: none;
+    text-decoration-color: #000000;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: linear-gradient(-45deg, #ffffff, #ffffff);
+    background-size: 220% 220%;
+    animation: cadastrar 10s ease infinite;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.CLICANDO-AQUI {
+    margin: auto;
+    color: #ffffff;
+    text-decoration: #00eeff;
+}
+
+.textfield>input ::placeholder {
+    color: #00000094
+}
+
+.btn-Cadastre-se {
+
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #011e5c;
+    background: #FFF;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #062d80;
+
+}
+.btn-Finalizado{
+    width: 35%;
+    height: 10%;
+    padding: 16px 0px;
+    margin: 15px;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #011e5c;
+    background: #FFF;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #062d80;
+
+}
+
+@media only screen and (max-width: 950px) {
+    .card-Cadastre-se {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .main-Cadastre-se {
+        flex-direction: column;
+    }
+
+    .left-Cadastre-se>h1 {
+        display: none;
+    }
+
+    .left-Cadastre-se {
+        width: 100%;
+        height: auto;
+    }
+
+    .right-Cadastre-se {
+        width: 100%;
+        height: auto;
+    }
+
+    .imagem-Cadastre-se {
+        width: 70vw;
+    }
+
+    .card-Cadastre-se {
+        width: 90%;
+    }
+}
